@@ -10,10 +10,15 @@ body {
 
 /* Header */
 header {
-    background: #004080;
+    position: sticky;
+    top: 0;
+    background: #004080; /* Dark blue background */
     color: white;
+    z-index: 1000; /* Ensures the header stays above other elements */
     text-align: center;
     padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+
 }
 
 header h1 {
