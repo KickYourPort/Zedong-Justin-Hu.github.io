@@ -12,7 +12,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: #004080; /* Dark blue background */
+    background: #b8860b; /* Dark blue background */
     color: white;
     z-index: 1000; /* Ensures the header stays above other elements */
     text-align: center;
@@ -66,7 +66,7 @@ h2 {
 
 /* Footer */
 footer {
-    background: #004080;
+    background: #b8860b;
     color: white;
     text-align: center;
     padding: 1rem 0;
