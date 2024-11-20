@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 # Welcome to My Website
 
 Hello! I'm **Zedong Hu**, a PhD candidate at Purdue University specializing in semiconductor R&D, device structure design, and performance improvement.
