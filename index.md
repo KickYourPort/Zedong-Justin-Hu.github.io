@@ -10,5 +10,5 @@ I am currently pursuing my PhD at the Elmore Family School of Electrical and Com
 - **Project 2**: Description of the project.
 
 ## Contact
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- [LinkedIn](https://www.linkedin.com/in/your-profile)
+- Email: [hu826@purdue.edu](mailto:hu826@purdue.edu)
+- [LinkedIn](www.linkedin.com/in/zedong-hu-935358214)
