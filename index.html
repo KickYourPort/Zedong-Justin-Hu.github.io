@@ -4,62 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Zedong Hu - Resume and Portfolio">
-    <title>Zedong Hu - Resume</title>
+    <title>Zedong Hu - Professional Portfolio</title>
     <style>
         body {
-            font-family: TimesNewRoman, sans-serif;
-            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: #f5f5f5;
+            line-height: 1.6;
         }
         header {
-            background-color: #0073e6;
+            background-color: #0056b3;
             color: white;
             padding: 20px 0;
-            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         header h1 {
             margin: 0;
+            font-size: 2rem;
         }
         nav {
-            text-align: center;
             margin-top: 10px;
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
         }
-        section {
-            max-width: 800px;
+        nav a:hover {
+            color: #ffc107;
+        }
+        .container {
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         section h2 {
-            border-bottom: 2px solid #0073e6;
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
             padding-bottom: 5px;
+            margin-bottom: 20px;
         }
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        ul li::before {
+            content: "•";
+            color: #0056b3;
+            margin-right: 10px;
         }
         footer {
             text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #0073e6;
+            padding: 20px;
+            background-color: #0056b3;
             color: white;
+            margin-top: 30px;
         }
         footer a {
-            color: white;
+            color: #ffc107;
+            text-decoration: none;
+        }
+        footer a:hover {
             text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -70,80 +99,65 @@
         <nav>
             <a href="#objective">Objective</a>
             <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#honors">Honors & Awards</a>
+            <a href="#honors">Honors</a>
             <a href="#publications">Publications</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <section id="Open to Job">
-        <h2>Open to job</h2>
-        <p>Seeking an R&D position in the semiconductor industry where I can apply my expertise in device structure design and performance optimization to drive innovation and enhance the efficiency of semiconductor devices. Eager to contribute to a dynamic team and leverage my skills in research, analysis, and problem-solving to achieve technological advancements.</p>
-    </section>
+    <div class="container">
+        <section id="objective">
+            <h2>Open to Job</h2>
+            <p>Seeking an R&D position in the semiconductor industry where I can apply my expertise in device structure design and performance optimization to drive innovation and enhance the efficiency of semiconductor devices. Eager to contribute to a dynamic team and leverage my skills in research, analysis, and problem-solving to achieve technological advancements.</p>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Purdue University</strong> (Aug. 2021 – May 2025)<br>Ph.D. in Electrical and Computer Engineering, GPA: 3.9/4.0</li>
-            <li><strong>Northwestern University</strong> (Sept. 2019 – Jun. 2021)<br>M.S. in Electrical and Computer Engineering, GPA: 4.0/4.0</li>
-            <li><strong>University of Electronic Science and Technology</strong> (Sept. 2015 – Jun. 2019)<br>B.S. in Electronic Information Science and Technology, GPA: 3.68/4.0</li>
-        </ul>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Purdue University</strong> (Aug. 2021 – May 2025)<br>Ph.D. in Electrical and Computer Engineering, GPA: 3.9/4.0</li>
+                <li><strong>Northwestern University</strong> (Sept. 2019 – Jun. 2021)<br>M.S. in Electrical and Computer Engineering, GPA: 4.0/4.0</li>
+                <li><strong>University of Electronic Science and Technology</strong> (Sept. 2015 – Jun. 2019)<br>B.S. in Electronic Information Science and Technology, GPA: 3.68/4.0</li>
+            </ul>
+        </section>
 
-   <section id="projects">
-    <h2>Research Projects</h2>
+        <section id="projects">
+            <h2>Research Projects</h2>
+            <ul>
+                <li><strong>Flexible Oxide-Oxide Vertically Aligned Nanocomposite (VAN) Memristor</strong><br>
+                    Optimized device performance, improving set/reset voltage by 60%, and enhancing device-to-device variation.
+                </li>
+                <li><strong>Metal-Oxide VAN Bilayer Memristor</strong><br>
+                    Developed a bilayer memristor to enhance performance for spiking neural networks with 94% accuracy.</li>
+            </ul>
+        </section>
 
-    <article>
-        <h3>Flexible Oxide-oxide Vertically Aligned Nanocomposite (VAN) Memristor for Flexible Neuromorphic Computing</h3>
-        <ul>
-            <li>Proposed and fabricated a novel flexible memristor using oxide-oxide VAN thin films via pulsed laser deposition (PLD), e-beam lithography (EBL), reactive ion etching (RIE), and sputtering.</li>
-            <li>Optimized interface density to enhance device performance, reducing set/reset voltage by 60%, and improving endurance (&gt;10<sup>12</sup> cycles), retention (&gt;10<sup>5</sup> seconds), and device-to-device variation (μ = 1.5 V, σ = 0.1 V, σ/μ = 0.07).</li>
-            <li>Conducted microstructural analysis (XRD, TEM, AFM) and electrical testing with a probe station and Keithley 4200A. Collaborated with University of Texas at Arlington for COMSOL-based switching mechanism analysis.</li>
-            <li>Integrated the device into a spiking neural network (SNN) using Python and MATLAB, achieving &gt;95% accuracy on the MNIST dataset.</li>
-            <li>Supervised two undergraduates in electrical characterization techniques.</li>
-        </ul>
-    </article>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, Go</li>
+                <li><strong>Software:</strong> VS Code, MATLAB, COMSOL, OriginLab, nanoHUB</li>
+                <li><strong>Tools:</strong> XRD, TEM, AFM, Probe Station</li>
+            </ul>
+        </section>
 
-    <article>
-        <h3>Metal-oxide VAN Bilayer Memristor for High Performance Electronic Synapse</h3>
-        <ul>
-            <li>Developed and fabricated a bilayer memristor integrating Co-CeO<sub>2</sub> VAN layer with a CeO<sub>2</sub>-based memristor to enhance device performance using PLD and sputtering.</li>
-            <li>Improved performance through selective conductive filament formation, achieving &gt;67% reduction in set/reset voltage, increased reliability (endurance: &gt;10<sup>6</sup> cycles, retention: &gt;10<sup>3</sup> seconds), and better device-to-device variation (μ = 2.0 V, σ = 0.12 V, σ/μ = 0.06).</li>
-            <li>Conducted microstructural analysis (XRD, TEM, AFM) and electrical testing with a probe station and Keithley 4200A. Investigated the device switching mechanism using COMSOL and MATLAB.</li>
-            <li>Developed a spiking neural network (SNN) using the bilayer memristor in Python, achieving ~94% accuracy on the MNIST dataset after 12 iterations.</li>
-            <li>Supervised one graduate student in device fabrication techniques.</li>
-        </ul>
-    </article>
-</section>
+        <section id="honors">
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li>Bilsland Dissertation Fellowship (2023)</li>
+                <li>Best Poster Award, IEEE Chicago (2020)</li>
+            </ul>
+        </section>
 
-
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong> Python, Go</li>
-            <li><strong>Software:</strong> VS Code, MATLAB, COMSOL, OriginLab, nanoHUB, AutoCAD</li>
-            <li><strong>Tools:</strong> XRD, TEM, AFM, Probe Station, PLD, EBL</li>
-        </ul>
-    </section>
-
-    <section id="honors">
-        <h2>Honors & Awards</h2>
-        <ul>
-            <li>Bilsland Dissertation Fellowship (12/2023)</li>
-            <li>Best Poster Award, IEEE Chicago’s Joint Annual Meeting (11/2020)</li>
-        </ul>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>Z. Hu, H. Dou, J. Lu, Z. Lin, H. Wang, <em>ACS Nano</em> (under review).</li>
-            <li>Z. Hu, H. Dou, J. Shen, J. Lu, Y. Zhang, Z. Shang, H. Wang, <em>ACS Applied Materials & Interfaces</em> (2024).</li>
-            <li>Z. Hu, J. Lu, H. Dou, J. Shen, J. P. Barnard, J. Liu, X. Zhang, and H. Wang, <em>Nano Research</em>, pp. 1–9 (2023).</li>
-        </ul>
-        <p>*Published more than 15 journal articles as first author or co-author.</p>
-    </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>Hu, Z., et al. <em>ACS Nano</em> (under review).</li>
+                <li>Hu, Z., et al. <em>ACS Applied Materials</em>, 2024.</li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Zedong Hu | <a href="mailto:hu826@purdue.edu">Contact Me</a></p>
